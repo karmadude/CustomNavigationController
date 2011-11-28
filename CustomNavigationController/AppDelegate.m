@@ -20,6 +20,39 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
+    
+    // Style Navigation Bar Appearance
+    NSDictionary *textStyleAttributes = [NSDictionary dictionaryWithObjectsAndKeys:
+                                         UIColorFromRGB(0x282828), UITextAttributeTextColor,
+                                         [UIColor whiteColor], UITextAttributeTextShadowColor,
+                                         CGSizeMake(0.0f, 0.0f), UITextAttributeTextShadowOffset,
+                                         nil];
+    
+    NSMutableDictionary *hiTextStyleAttributes = [NSMutableDictionary dictionaryWithDictionary:textStyleAttributes];
+    [hiTextStyleAttributes setValue:UIColorFromRGB(0xf7f7f7) forKey:UITextAttributeTextColor];
+    [hiTextStyleAttributes setValue:UIColorFromRGB(0x444444) forKey:UITextAttributeTextShadowColor];
+    
+    [[UINavigationBar appearance]
+     setBackgroundImage:[UIImage imageNamed:@"navigationbar"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:textStyleAttributes];
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setTitleTextAttributes:textStyleAttributes forState:UIControlStateNormal];
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setTitleTextAttributes:hiTextStyleAttributes forState:UIControlStateHighlighted];
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setBackButtonBackgroundImage:[UIImage imageNamed:@"backbutton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setBackButtonBackgroundImage:[UIImage imageNamed:@"backbuttonhi"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setBackgroundImage:[UIImage imageNamed:@"barbutton"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearanceWhenContainedIn:[UINavigationBar class], nil]
+     setBackgroundImage:[UIImage imageNamed:@"barbuttonhi"] forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    
+
+    
     return YES;
 }
 							

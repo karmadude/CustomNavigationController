@@ -17,6 +17,16 @@
 		57FE0042148313DB00ED01FD /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FE0040148313DB00ED01FD /* MainStoryboard_iPad.storyboard */; };
 		57FE0045148313DB00ED01FD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FE0044148313DB00ED01FD /* MasterViewController.m */; };
 		57FE0048148313DB00ED01FD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FE0047148313DB00ED01FD /* DetailViewController.m */; };
+		57FE00551483252B00ED01FD /* navigationbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE00531483252B00ED01FD /* navigationbar.png */; };
+		57FE00561483252B00ED01FD /* navigationbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE00541483252B00ED01FD /* navigationbar@2x.png */; };
+		57FE005914832B4900ED01FD /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE005714832B4900ED01FD /* backbutton.png */; };
+		57FE005A14832B4900ED01FD /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE005814832B4900ED01FD /* backbutton@2x.png */; };
+		57FE005D14832ED200ED01FD /* barbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE005B14832ED200ED01FD /* barbutton.png */; };
+		57FE005E14832ED200ED01FD /* barbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE005C14832ED200ED01FD /* barbutton@2x.png */; };
+		57FE00691483338800ED01FD /* barbuttonhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE00671483338800ED01FD /* barbuttonhi.png */; };
+		57FE006A1483338800ED01FD /* barbuttonhi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE00681483338800ED01FD /* barbuttonhi@2x.png */; };
+		57FE006D1483359200ED01FD /* backbuttonhi.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE006B1483359200ED01FD /* backbuttonhi.png */; };
+		57FE006E1483359200ED01FD /* backbuttonhi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE006C1483359200ED01FD /* backbuttonhi@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +46,16 @@
 		57FE0044148313DB00ED01FD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		57FE0046148313DB00ED01FD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		57FE0047148313DB00ED01FD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		57FE00531483252B00ED01FD /* navigationbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navigationbar.png; path = images/navigationbar.png; sourceTree = "<group>"; };
+		57FE00541483252B00ED01FD /* navigationbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navigationbar@2x.png"; path = "images/navigationbar@2x.png"; sourceTree = "<group>"; };
+		57FE005714832B4900ED01FD /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backbutton.png; path = images/backbutton.png; sourceTree = "<group>"; };
+		57FE005814832B4900ED01FD /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backbutton@2x.png"; path = "images/backbutton@2x.png"; sourceTree = "<group>"; };
+		57FE005B14832ED200ED01FD /* barbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barbutton.png; path = images/barbutton.png; sourceTree = "<group>"; };
+		57FE005C14832ED200ED01FD /* barbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "barbutton@2x.png"; path = "images/barbutton@2x.png"; sourceTree = "<group>"; };
+		57FE00671483338800ED01FD /* barbuttonhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barbuttonhi.png; path = images/barbuttonhi.png; sourceTree = "<group>"; };
+		57FE00681483338800ED01FD /* barbuttonhi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "barbuttonhi@2x.png"; path = "images/barbuttonhi@2x.png"; sourceTree = "<group>"; };
+		57FE006B1483359200ED01FD /* backbuttonhi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backbuttonhi.png; path = images/backbuttonhi.png; sourceTree = "<group>"; };
+		57FE006C1483359200ED01FD /* backbuttonhi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backbuttonhi@2x.png"; path = "images/backbuttonhi@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +102,7 @@
 		57FE0031148313DB00ED01FD /* CustomNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				57FE00521483251300ED01FD /* images */,
 				57FE003A148313DB00ED01FD /* AppDelegate.h */,
 				57FE003B148313DB00ED01FD /* AppDelegate.m */,
 				57FE003D148313DB00ED01FD /* MainStoryboard_iPhone.storyboard */,
@@ -104,6 +125,23 @@
 				57FE0039148313DB00ED01FD /* CustomNavigationController-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57FE00521483251300ED01FD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				57FE006B1483359200ED01FD /* backbuttonhi.png */,
+				57FE006C1483359200ED01FD /* backbuttonhi@2x.png */,
+				57FE00671483338800ED01FD /* barbuttonhi.png */,
+				57FE00681483338800ED01FD /* barbuttonhi@2x.png */,
+				57FE005B14832ED200ED01FD /* barbutton.png */,
+				57FE005C14832ED200ED01FD /* barbutton@2x.png */,
+				57FE005714832B4900ED01FD /* backbutton.png */,
+				57FE005814832B4900ED01FD /* backbutton@2x.png */,
+				57FE00531483252B00ED01FD /* navigationbar.png */,
+				57FE00541483252B00ED01FD /* navigationbar@2x.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +198,16 @@
 				57FE0036148313DB00ED01FD /* InfoPlist.strings in Resources */,
 				57FE003F148313DB00ED01FD /* MainStoryboard_iPhone.storyboard in Resources */,
 				57FE0042148313DB00ED01FD /* MainStoryboard_iPad.storyboard in Resources */,
+				57FE00551483252B00ED01FD /* navigationbar.png in Resources */,
+				57FE00561483252B00ED01FD /* navigationbar@2x.png in Resources */,
+				57FE005914832B4900ED01FD /* backbutton.png in Resources */,
+				57FE005A14832B4900ED01FD /* backbutton@2x.png in Resources */,
+				57FE005D14832ED200ED01FD /* barbutton.png in Resources */,
+				57FE005E14832ED200ED01FD /* barbutton@2x.png in Resources */,
+				57FE00691483338800ED01FD /* barbuttonhi.png in Resources */,
+				57FE006A1483338800ED01FD /* barbuttonhi@2x.png in Resources */,
+				57FE006D1483359200ED01FD /* backbuttonhi.png in Resources */,
+				57FE006E1483359200ED01FD /* backbuttonhi@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
