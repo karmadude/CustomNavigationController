@@ -14,7 +14,6 @@
 		57FE0038148313DB00ED01FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FE0037148313DB00ED01FD /* main.m */; };
 		57FE003C148313DB00ED01FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FE003B148313DB00ED01FD /* AppDelegate.m */; };
 		57FE003F148313DB00ED01FD /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FE003D148313DB00ED01FD /* MainStoryboard_iPhone.storyboard */; };
-		57FE0042148313DB00ED01FD /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FE0040148313DB00ED01FD /* MainStoryboard_iPad.storyboard */; };
 		57FE0045148313DB00ED01FD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FE0044148313DB00ED01FD /* MasterViewController.m */; };
 		57FE0048148313DB00ED01FD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FE0047148313DB00ED01FD /* DetailViewController.m */; };
 		57FE00551483252B00ED01FD /* navigationbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FE00531483252B00ED01FD /* navigationbar.png */; };
@@ -41,7 +40,6 @@
 		57FE003A148313DB00ED01FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		57FE003B148313DB00ED01FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		57FE003E148313DB00ED01FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		57FE0041148313DB00ED01FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		57FE0043148313DB00ED01FD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		57FE0044148313DB00ED01FD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		57FE0046148313DB00ED01FD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 				57FE003A148313DB00ED01FD /* AppDelegate.h */,
 				57FE003B148313DB00ED01FD /* AppDelegate.m */,
 				57FE003D148313DB00ED01FD /* MainStoryboard_iPhone.storyboard */,
-				57FE0040148313DB00ED01FD /* MainStoryboard_iPad.storyboard */,
 				57FE0043148313DB00ED01FD /* MasterViewController.h */,
 				57FE0044148313DB00ED01FD /* MasterViewController.m */,
 				57FE0046148313DB00ED01FD /* DetailViewController.h */,
@@ -197,7 +194,6 @@
 			files = (
 				57FE0036148313DB00ED01FD /* InfoPlist.strings in Resources */,
 				57FE003F148313DB00ED01FD /* MainStoryboard_iPhone.storyboard in Resources */,
-				57FE0042148313DB00ED01FD /* MainStoryboard_iPad.storyboard in Resources */,
 				57FE00551483252B00ED01FD /* navigationbar.png in Resources */,
 				57FE00561483252B00ED01FD /* navigationbar@2x.png in Resources */,
 				57FE005914832B4900ED01FD /* backbutton.png in Resources */,
@@ -244,14 +240,6 @@
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
-		57FE0040148313DB00ED01FD /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57FE0041148313DB00ED01FD /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -261,7 +249,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -287,7 +275,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -305,10 +293,12 @@
 		57FE004C148313DB00ED01FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomNavigationController/CustomNavigationController-Prefix.pch";
 				INFOPLIST_FILE = "CustomNavigationController/CustomNavigationController-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -316,10 +306,12 @@
 		57FE004D148313DB00ED01FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomNavigationController/CustomNavigationController-Prefix.pch";
 				INFOPLIST_FILE = "CustomNavigationController/CustomNavigationController-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
